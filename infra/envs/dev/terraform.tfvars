@@ -1,0 +1,16 @@
+aws_region              = "ap-south-1"
+environment             = "dev"
+vpc_cidr                = "10.10.0.0/16"
+azs                     = ["ap-south-1a", "ap-south-1b"]
+public_subnet_cidrs     = ["10.10.1.0/24", "10.10.2.0/24"]
+private_subnet_cidrs    = ["10.10.11.0/24", "10.10.12.0/24"]
+ecs_cpu                 = 256
+ecs_memory              = 512
+ecs_desired_count       = 1
+db_instance_class       = "db.t4g.micro"
+db_allocated_storage    = 20
+db_name                 = "bookings_dev"
+db_username             = "bookings_admin"
+backup_retention_period = 1
+deletion_protection     = false
+multi_az                = false
