@@ -1,0 +1,16 @@
+aws_region              = "ap-south-1"
+environment             = "prod"
+vpc_cidr                = "10.20.0.0/16"
+azs                     = ["ap-south-1a", "ap-south-1b"]
+public_subnet_cidrs     = ["10.20.1.0/24", "10.20.2.0/24"]
+private_subnet_cidrs    = ["10.20.11.0/24", "10.20.12.0/24"]
+ecs_cpu                 = 1024
+ecs_memory              = 2048
+ecs_desired_count       = 3
+db_instance_class       = "db.r6g.large"
+db_allocated_storage    = 100
+db_name                 = "bookings_prod"
+db_username             = "bookings_admin"
+backup_retention_period = 30
+deletion_protection     = true
+multi_az                = true
